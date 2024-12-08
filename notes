@@ -8,6 +8,27 @@
     <script src="skill.js"></script>
 </head>
 <body>
+<style>
+#h2{
+    padding-left: 20;
+    color: rgb(0, 104, 16);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 29px;
+    font-style: normal;
+    text-decoration: dashed;
+    letter-spacing: 3px;
+}
+body{
+    background-color: beige;
+}
+input{
+    border-color: aqua;
+    border-radius: 8%;
+    border-style: ridge;
+    box-shadow: 50px;
+    justify-self: center;
+}
+</style
    <table align="center">
     <center>
     <h2 id="h2">  Les notes de dd 102</h2> </center>
@@ -73,5 +94,24 @@
                </td>
         </tr>
    </table>
+<script>
+function yahya(){
+      var xdev=document.getElementById("dev").value;
+      var xent=document.getElementById("ent").value;
+      var xeng=document.getElementById("eng").value;
+      var xbd=document.getElementById("bd").value;
+      var xmyn= (Number(xdev)+ Number(xent)+Number(xeng)+Number(xbd))/4;
+      document.getElementById('myn').value=xmyn.toFixed(2)
+      document.getElementById("dev").focus();
+}
+function god(){
+    var xdev=document.getElementById("dev").value="";
+    var xent=document.getElementById("ent").value="";
+    var xeng=document.getElementById("eng").value="";
+    var xbd=document.getElementById("bd").value="";
+    
+}
+</script>
 </body>
 </html>
+                                                
